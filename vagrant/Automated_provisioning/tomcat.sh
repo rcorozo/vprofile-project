@@ -11,7 +11,7 @@ chown -R tomcat.tomcat /usr/local/tomcat8
 
 rm -rf /etc/systemd/system/tomcat.service
 
-cat <<EOT>> /etc/systemd/system/tomcat.service
+cat << EOT > /etc/systemd/system/tomcat.service
 [Unit]
 Description=Tomcat
 After=network.target
@@ -39,7 +39,6 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-
 EOT
 
 systemctl daemon-reload
