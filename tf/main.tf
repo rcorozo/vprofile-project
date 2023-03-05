@@ -129,9 +129,9 @@ module "sg_backend_svc" {
 
   vpc_id = module.my_vpc.vpc_id
   
-  ingress_rules       = ["ssh-tcp"]
+  # ingress_rules       = ["ssh-tcp"]
   # TODO: Allow SSH traffic only from EC2 Connect
-  ingress_cidr_blocks = ["0.0.0.0/0"]
+  # ingress_cidr_blocks = ["0.0.0.0/0"]
 
   ingress_with_self = [{
     rule        = "all-all"
