@@ -7,6 +7,10 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "aws_route53_local_domain" {
+  default = "c11bits.local"
+}
+
 variable "public_key" {}
 
 variable "project_name" {
