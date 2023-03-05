@@ -7,6 +7,8 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "public_key" {}
+
 variable "project_name" {
   default = "vprofile"
 }
